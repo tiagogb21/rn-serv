@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "./styles";
 import { Text } from "react-native";
 
-export default function index() {
+export default function SignUp() {
   return (
     <Container>
       <Text>SignUp</Text>

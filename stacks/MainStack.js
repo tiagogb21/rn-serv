@@ -5,11 +5,18 @@ import Preload from "../screens/Preload";
 import SignIn from "../screens/Preload";
 import SignUp from "../screens/SignUp";
 
-const stack = createStackNavigator();
+const Stack = createStackNavigator();
 
 export default function MainStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      // Estabelecemos a primeira tela a ser renderizada (segurança):
+      initialRouteName="Preload"
+      screenOptions={{
+        // Não queremos que tenha cabeçalho
+        headerShown: false,
+      }}
+    >
       {/* Preload */}
       <Stack.Screen name="Preload" component={Preload} />
       {/* Login */}
