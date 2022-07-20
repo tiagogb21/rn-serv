@@ -1,11 +1,10 @@
 import React from "react";
-import { Container } from "./styles";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 export default function SignIn() {
   return (
-    <Container>
-      <Text>SignIn</Text>
-    </Container>
+    <View style={styles.container}>
+      <Image style={styles.logo} source={require("../../assets/work.png")} />
+    </View>
   );
 }
